@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame{
+	border:none;
+	/*border-radius:15px;*/
+	background-color: rgb(250, 250, 250);
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,16">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	border:none;
+	background-color: rgb(230, 230, 230);
+	border-top-right-radius:15px;
+	border-top-left-radius:15px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,16,1,1,1">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="font">
+            <font>
+             <family>楷体</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>医学图像浏览器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="minButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 10px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/resource/min.png</normaloff>:/resource/min.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="maxButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 10px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/resource/max1.png</normaloff>:/resource/max1.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="closeButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QToolButton:hover{
+	background-color: rgb(255, 0, 0);
+	border-radius: 10px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/resource/close.png</normaloff>:/resource/close.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,1">
+         <item>
+          <widget class="QFrame" name="frame_4">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6" stretch="15,1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QWidget" name="widget_4" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <item>
+                   <widget class="QLabel" name="label_8">
+                    <property name="font">
+                     <font>
+                      <family>楷体</family>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>未导入</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QScrollArea" name="scrollArea">
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="widgetResizable">
+                     <bool>true</bool>
+                    </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>891</width>
+                       <height>626</height>
+                      </rect>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_6">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QToolButton" name="reverseButton_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>左右翻转</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="reverseButton_3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>灰度反转</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="scaleButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>缩放</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QDoubleSpinBox {
+    padding-right: 15px;
+	font: 12pt &quot;楷体&quot;;
+}
+QDoubleSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/up.png);
+}
+QDoubleSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/down.png);
+}</string>
+                 </property>
+                 <property name="maximum">
+                  <double>10.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.010000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5" stretch="3,1,3,1,2,2">
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="font">
+               <font>
+                <family>楷体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>灰度窗</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4" stretch="2,1">
+               <property name="leftMargin">
+                <number>11</number>
+               </property>
+               <property name="topMargin">
+                <number>11</number>
+               </property>
+               <property name="rightMargin">
+                <number>11</number>
+               </property>
+               <property name="bottomMargin">
+                <number>11</number>
+               </property>
+               <item>
+                <widget class="QWidget" name="widget_2" native="true">
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_3">
+                    <property name="font">
+                     <font>
+                      <family>楷体</family>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>窗宽</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QSpinBox" name="spinBox">
+                    <property name="styleSheet">
+                     <string notr="true">QSpinBox {
+    padding-right: 15px;
+	font: 12pt &quot;楷体&quot;;
+}
+QSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/up.png);
+}
+QSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/down.png);
+}</string>
+                    </property>
+                    <property name="maximum">
+                     <number>10000</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_4">
+                    <property name="font">
+                     <font>
+                      <family>楷体</family>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>窗位</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QSpinBox" name="spinBox_2">
+                    <property name="styleSheet">
+                     <string notr="true">QSpinBox {
+    padding-right: 15px;
+	font: 12pt &quot;楷体&quot;;
+}
+QSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/up.png);
+}
+QSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/down.png);
+}</string>
+                    </property>
+                    <property name="maximum">
+                     <number>10000</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="applyButton_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>应用</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="font">
+               <font>
+                <family>楷体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>灰度反转</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="0" column="0">
+                <widget class="QToolButton" name="reverseButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>灰度反转</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="font">
+               <font>
+                <family>楷体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>图像增强</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3" stretch="2,1">
+               <item>
+                <widget class="QWidget" name="widget" native="true">
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label">
+                    <property name="font">
+                     <font>
+                      <family>楷体</family>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>锐化因子</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QDoubleSpinBox" name="doubleSpinBox">
+                    <property name="font">
+                     <font>
+                      <family>楷体</family>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QDoubleSpinBox {
+    padding-right: 15px;
+	font: 12pt &quot;楷体&quot;;
+}
+QDoubleSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/up.png);
+}
+QDoubleSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/down.png);
+}</string>
+                    </property>
+                    <property name="maximum">
+                     <double>10.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.010000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+                    <property name="font">
+                     <font>
+                      <family>楷体</family>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QDoubleSpinBox {
+    padding-right: 15px;
+	font: 12pt &quot;楷体&quot;;
+}
+QDoubleSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/up.png);
+}
+QDoubleSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+	image: url(:/resource/down.png);
+}</string>
+                    </property>
+                    <property name="maximum">
+                     <double>10.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.010000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_2">
+                    <property name="font">
+                     <font>
+                      <family>楷体</family>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>去噪因子</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="applyButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>应用</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="font">
+               <font>
+                <family>楷体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>图像恢复</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="0">
+                <widget class="QToolButton" name="returnButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>恢复原始图像</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="font">
+               <font>
+                <family>楷体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>文件</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QToolButton" name="loadButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>导入图像</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="saveButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton:hover{
+	background-color: rgb(200, 200, 200);
+	border-radius: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>导出图像</string>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
